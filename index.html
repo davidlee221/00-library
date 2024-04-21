@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLee's Library</title>
+    <link href="./output.css" rel="stylesheet" type="text/css"/>
+</head>
+<body id="body">
+   
+    <div id="main-container"></div>
+    <dialog>
+        <div class="dialog-header"><h2>Add a book!</h2><button id="close-modal">X</button></div>
+        <form>
+            <div><label for="title" class="form-label">what's it called? <input name="title" class="form-input"></label></div>
+            <div><label for="author">who wrote it? <input name="author"></label></div>
+            <div><label for="pages">page count?<input name="pages"></label></div>
+            <div><button onclick=addBook()>Punch it!</button></div>
+        </form>
+    </dialog>
+    <div id="add-book-area"><button id="add-book-btn">Add Book!</button></div>
+    <script src="./scripts.js"></script>
+</body>
+</html>

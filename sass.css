@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+html #main-container {
+  margin: 2rem;
+  display: grid;
+  width: 75vw;
+  grid-template-columns: repeat(2, 0.4fr);
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+html .book-card {
+  border: 0.2rem solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+}
+html .book-card .title-div {
+  display: flex;
+  align-items: start;
+}
+html .book-card .title-div .title-span {
+  color: #555;
+  font-size: 2rem;
+  text-align: center;
+  flex: 1;
+}
+html .book-card .removeBtn {
+  border: 1px #ddd solid;
+  width: 1ch;
+}
+html .book-card .author, html .book-card .pages, html .book-card .read {
+  color: #999;
+  font-weight: lighter;
+  text-align: center;
+  margin-left: 12rem;
+}
+html .book-card .read-span {
+  margin-left: 0.4rem;
+  color: #222;
+  font-weight: bolder;
+}
+html .book-card .read-btn {
+  border: blue 1px solid;
+  padding: 0.1rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+html dialog {
+  vertical-align: top;
+  height: 15rem;
+  width: 25rem;
+  padding: 1rem 2rem;
+}
+html dialog .dialog-header {
+  display: flex;
+}
+html dialog .dialog-header h2 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+  flex: 1;
+}
+html dialog form {
+  text-align: center;
+}
+html dialog form input {
+  border: 1px #bbb solid;
+  border-radius: 0.5rem;
+  margin: 0.2rem;
+  width: 8rem;
+  padding-left: 0.5rem;
+}
+html dialog form button {
+  margin-top: 2rem;
+  border: 1px #bbb solid;
+  padding: 0.1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+html #add-book-area {
+  width: 65vw;
+  text-align: center;
+}
+html #add-book-area #add-book-btn {
+  border: blue 1px solid;
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+  margin: 1rem 2rem;
+}
+
+/*# sourceMappingURL=sass.css.map */
